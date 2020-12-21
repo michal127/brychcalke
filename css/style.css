@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --greenPrimary: #2e5d39;
+  --greenSecondary: #549c39;
+  --greenDeliveryTitle: #1A3723;
+  --redPrimary: #bf3936;
+  --redForPrice: #be2b36;
+  --grayForProductDescription: #A9A9A9;
+
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 95%;
+  margin: 5% auto 0;
+  overflow: hidden;
+  border: 2px solid red;
+
+}
+
+.header__image {
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+.header__video {
+
+  width: 100%;
+}
+
+.header__div-text {
+  background-color: var(--greenPrimary);
+}
+
+.header__text {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 2px;
+  font-size: 5vw;
+
+}
+
+@media(min-width:768px) {
+  .header__text {
+    font-size: 4vw;
+    padding: 1vw;
+  }
+}
+
+.main {
+  width: 95%;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+.gift-ideas {
+  margin-top: 5%;
+  padding: 0 5%;
+}
+
+.gift-ideas__title {
+  text-align: center;
+  font-size: 8vw;
+  margin-bottom: 5%;
+}
+
+.gift-ideas__boxes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.gift-ideas__box {
+  height: 20vw;
+  flex-basis: 45%;
+  margin-bottom: 5%;
+  background-color: var(--greenSecondary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+
+}
+
+.gift-ideas__link {
+
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 5vw;
+}
+
+@media (min-width:768px) {
+  .gift-ideas__box {
+    height: 10vh;
+    flex-basis: 20%;
+  }
+
+  .gift-ideas__link {
+    font-size: 2vw;
+  }
+}
+
+.gift-for-her {
+  margin-bottom: 5%;
+  border: 2px solid green;
+
+}
+
+.gift-for-her__box {
+  position: relative;
+}
+
+.gift-for-her__image {
+  width: 100%;
+}
+
+.gift-for-her__title {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 7vw;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+.gift-for-her__products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+}
+
+.gift-for-her__product {
+  flex-basis: 40%;
+  min-height: 35vh;
+  background-color: yellow;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.gift-for-her__product-image {
+  width: 100%;
+}
+
+.gift-for-her__promo-badge {
+  margin: 5% 0 5% 30%;
+  background-color: var(--redForPrice);
+  width: 40%;
+  padding: 2px;
+  border-radius: 4px;
+  color: white;
+
+}
+
+.gift-ideas__check-more-link {
+  display: block;
+  text-decoration: none;
+  width: 70%;
+  height: 10vh;
+  line-height: 10vh;
+  margin: 5% 15% 0;
+  text-align: center;
+  background-color: #000;
+  color: white;
+}
+
+.footer {
+  width: 95%;
+  margin: 5% auto 0;
+  overflow: hidden;
+  color: #fff;
+  background-color: var(--greenPrimary);
+}
+
+.footer__calendar-title {
+  margin: 5% 0;
+  font-size: 5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.footer__calendar-description {
+  font-size: 4vw;
+  width: 90%;
+  margin: 10% auto;
+  text-align: center;
+
+}
+
+.footer__calendar-list {
+  margin: 5% 2.5%;
+  list-style: none;
+}
+
+.footer__calendar-list-element {
+  margin: 5% 0;
+  font-size: 2.8vw;
+}
+
+
+.footer__calendar-graphic {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 3fr;
+  width: 80%;
+  margin: 10%;
+  align-items: center;
+  justify-items: center;
+
+}
+
+.footer__calendar-graphic-star {
+  width: 70%;
+}
+
+.footer__calendar-graphic-circle {
+  width: 50%;
+}
+
+.footer__calendar-graphic-text {
+  font-size: 2.8vw;
+}
+
+.footer__delivery {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 95%;
+  margin: 0 2.5% 10%;
+  overflow: hidden;
+
+}
+
+.footer__delivery-order {
+  flex-basis: 34%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__delivery-order-text {
+  flex-basis: 5vh;
+  line-height: 5vh;
+  font-size: 3.5vw;
+
+}
+
+.footer__delivery-date {
+  flex-basis: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+}
+
+.footer__delivery-order-title,
+.footer__delivery-title {
+  font-size: 3.5vw;
+  flex-basis: 5vh;
+  line-height: 5vh;
+  background-color: var(--greenDeliveryTitle);
+
+}
+
+.footer__delivery-date-box {
+  flex-basis: 5vh;
+  line-height: 5vh;
+  font-size: 3.5vw;
+
+}
+
+.footer__delivery-date-star {
+  width: 5%;
+}
+
+.footer__delivery-date-circle {
+  width: 4%;
+}
+
+.footer__bottom-graphic {
+  position: relative;
+  height: 5vh;
+  background-color: #fff;
+  width: 100%;
+}
+
+@media (min-width:500px) and (orientation:landscape) {
+
+  .footer__delivery-order-title,
+  .footer__delivery-title,
+  .footer__delivery-order-text,
+  .footer__delivery-date-box {
+    flex-basis: 10vh;
+    line-height: 10vh;
+  }
+
+  .footer__bottom-graphic {
+    height: 15vh;
+  }
+
+}
+
+.footer__bottom-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+@media (min-width:768px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .footer__calendar,
+  .footer__delivery {
+    flex-basis: 50%;
+    margin: 0 0 0;
+  }
+
+  .footer__delivery {
+    margin: 0 0 5%;
+  }
+
+  .footer__calendar-title {
+    font-size: 3vw;
+  }
+
+  .footer__calendar-description {
+
+    font-size: 2vw;
+  }
+
+  .footer__calendar-list-element,
+  .footer__calendar-graphic-text {
+    font-size: 1.4vw;
+  }
+
+  .footer__delivery-order-title,
+  .footer__delivery-title,
+  .footer__delivery-order-text,
+  .footer__delivery-date-box {
+    font-size: 1.5vw;
+  }
+
+  .footer__delivery-order-title,
+  .footer__delivery-title,
+  .footer__delivery-order-text,
+  .footer__delivery-date-box {
+    flex-basis: 2.4vh;
+    line-height: 2.4vh;
+  }
+}
+
+@media(min-width:768px) and (max-height: 600px) {
+
+
+  .footer__delivery-order-title,
+  .footer__delivery-title,
+  .footer__delivery-order-text,
+  .footer__delivery-date-box {
+    flex-basis: 8.5vh;
+    line-height: 8.5vh;
+
+  }
+}
